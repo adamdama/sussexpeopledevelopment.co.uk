@@ -24,11 +24,15 @@ body, html
 body
 {
 	color: #939598;
+	text-align: center;
 }
 
 .logo
 {
-	background: url('../images/spd-logo.png');
+	background: url('../images/spd-logo.png') no-repeat;
+	width: 863px;
+	height: 300px;
+	margin: auto;
 }
 
 .coming-soon
@@ -44,4 +48,5 @@ body
 .tagline
 {
 	color: #40287B;
+	font-family: 'futura_bk_btbook';
 }
