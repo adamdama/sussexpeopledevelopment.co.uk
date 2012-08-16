@@ -1,4 +1,36 @@
+/*
+ * colours:
+ * #40287B - purple
+ * #939598 - silver
+ */
+
+body, html
+{
+	height: 100%;
+	width: 100%;
+}
+
 body
 {
+	color: #939598;
+}
 
+.logo
+{
+	background: url('../images/spd-logo.png');
+}
+
+.coming-soon
+{
+	color: #40287B;
+}
+
+.contact
+{
+	
+}
+
+.tagline
+{
+	color: #40287B;
 }
