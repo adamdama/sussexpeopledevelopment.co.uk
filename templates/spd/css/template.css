@@ -152,7 +152,8 @@ a
 
 #banner
 {
-	height: 320px;
+	height: 355px;
+	margin-top: 10px;
 }
 
 #banner .ribbon

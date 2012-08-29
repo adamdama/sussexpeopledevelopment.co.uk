@@ -21,6 +21,9 @@ $doc->addStyleSheet($this->baseurl.'/templates/system/css/system.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 //$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.js', 'text/javascript');
 
+$menuItem = JFactory::getApplication()->getMenu()->getActive();
+$pageName = $menuItem->alias;
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
@@ -46,10 +49,13 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 		</div>
 		<div id="banner">
 			<div class="inner">
-				<jdoc:include type="message" />		
-				<jdoc:include type="modules" name="banner" />
-				<div class="banner"></div>
-				<div class="ribbon">looking after your most important asset</div>			
+				<jdoc:include type="message" />
+				<?php if(is_file(JPATH_ROOT .'/images/uploads/banners/'.$pageName.'.jpg')) : ?>	
+					<div class="banner">
+						<img src="<?php echo JURI::base(true) .'/images/uploads/banners/'.$pageName.'.jpg'; ?>" alt="<?php echo $pageName; ?>" />
+					</div>
+					<div class="ribbon">looking after your most important asset</div>
+				<?php endif; ?>		
 			</div>			
 		</div>
 		<div id="content">
