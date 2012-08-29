@@ -30,14 +30,20 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.j
 
 	<body>
 		<div id="header">
-			
+			<div class="inner">
+				
+			</div>			
 		</div>
 		<div id="menu">
-			<jdoc:include type="modules" name="menu" />			
+			<div class="inner">
+				<jdoc:include type="modules" name="menu" />
+			</div>		
 		</div>
 		<div id="banner">
-			<jdoc:include type="message" />		
-			<jdoc:include type="modules" name="banner" />		
+			<div class="inner">
+				<jdoc:include type="message" />		
+				<jdoc:include type="modules" name="banner" />				
+			</div>			
 		</div>
 		<div id="content">
 			<div class="inner">
@@ -50,7 +56,9 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.j
 			</div>		
 		</div>
 		<div id="footer">
-			
+			<div class="inner">
+				
+			</div>			
 		</div>
 	</body>
 </html>
