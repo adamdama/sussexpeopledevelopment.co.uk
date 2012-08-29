@@ -19,6 +19,7 @@ body
         font-size: 100.1%;
         padding: 0px;
         text-align: center;
+        width: 100%;
 }
 
 img
@@ -26,5 +27,46 @@ img
 	border: 0 none;
 }
 
+.inner
+{
+	width: 880px;
+	margin: auto;
+}
 
+#header
+{
+	height: 140px;
+}
 
+#menu
+{
+	width: 100%;
+	height: 30px;
+}
+
+#menu .menu
+{
+	width: 100%;
+}
+
+#menu .menu li
+{
+	float: left;
+	display: inline;
+	
+}
+
+#banner
+{
+	height: 320px;
+}
+
+#content
+{
+	
+}
+
+#footer
+{
+	height: 20px;
+}
