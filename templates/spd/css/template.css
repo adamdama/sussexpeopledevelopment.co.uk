@@ -50,8 +50,17 @@ a
 .inner
 {
 	width: 880px;
-	height: 100%;
 	margin: 0 auto;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
 }
 
 .hMenu
@@ -97,13 +106,12 @@ a
 
 #header .right
 {
-	float: right;
 	width: 275px;
 	margin-top: 20px;
 	color: #9B9C9E;
 	font-size: 21px;
 	text-align: right;
-	 font-family: 'garamondregular';
+	font-family: 'garamondregular';
 }
 
 #header .right span
@@ -114,13 +122,14 @@ a
 #menu
 {
 	width: 100%;
-	height: 38px;
+	height: 40px;
 }
 
 #menu .menu
 {
+	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 32px;
 	padding: 0px;
 	margin: 0px;
 	color: #40287B;
@@ -131,7 +140,7 @@ a
 	display: inline-block;
 	height: 100%;
 	font-size: 15px;
-	line-height: 38px;
+	line-height: 34px;
 	margin: 0px;
 	padding: 0px;
 }
@@ -146,6 +155,19 @@ a
 	height: 320px;
 }
 
+#banner .ribbon
+{
+	width: 896px;
+	height: 40px;
+	margin-left: -8px;
+	font-family: 'garamondregular';
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 40px;
+	font-size: 34px;
+	background: url('../images/ribbon.png');
+}
+
 #content
 {
 	
@@ -154,4 +176,7 @@ a
 #footer
 {
 	height: 20px;
+	border-top: 2px solid #40287B;
+	color: #9B9C9E;
+	line-height: 20px;
 }

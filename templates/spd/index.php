@@ -47,7 +47,9 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 		<div id="banner">
 			<div class="inner">
 				<jdoc:include type="message" />		
-				<jdoc:include type="modules" name="banner" />				
+				<jdoc:include type="modules" name="banner" />
+				<div class="banner"></div>
+				<div class="ribbon">looking after your most important asset</div>			
 			</div>			
 		</div>
 		<div id="content">
@@ -62,6 +64,12 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 		</div>
 		<div id="footer">
 			<div class="inner">
+				<div class="left">
+					copyright 2012
+				</div>
+				<div class="right">
+					<a href="mailto:<?php echo $templateparams->get('contact_email'); ?>"><?php echo $templateparams->get('contact_email'); ?></a>
+				</div>
 			</div>			
 		</div>
 	</body>
