@@ -35,7 +35,9 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.j
 			</div>			
 		</div>
 		<div id="menu">
+			<div class="spd-border-top"></div>
 			<jdoc:include type="modules" name="menu_bar" />
+			<div class="spd-border-bottom"></div>
 		</div>
 		<div id="banner">
 			<div class="inner">
