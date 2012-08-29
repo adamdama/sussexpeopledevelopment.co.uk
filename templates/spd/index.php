@@ -29,8 +29,28 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.j
 	</head>
 
 	<body>
-		<jdoc:include type="message" />
-		<jdoc:include type="component" />
-		<jdoc:include type="modules" name="debug" />
+		<div id="header">
+			
+		</div>
+		<div id="menu">
+			<jdoc:include type="modules" name="menu" />			
+		</div>
+		<div id="banner">
+			<jdoc:include type="message" />		
+			<jdoc:include type="modules" name="banner" />		
+		</div>
+		<div id="content">
+			<div class="inner">
+				<div class="content-left">
+					<jdoc:include type="component" />
+				</div>
+				<div class="content-right">
+					<jdoc:include type="modules" name="right-column" />	
+				</div>	
+			</div>		
+		</div>
+		<div id="footer">
+			
+		</div>
 	</body>
 </html>
