@@ -19,7 +19,7 @@ $templateparams		= $app->getTemplate(true)->params;
 
 $doc->addStyleSheet($this->baseurl.'/templates/system/css/system.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
-$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.js', 'text/javascript');
+//$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.js', 'text/javascript');
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -31,7 +31,12 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.j
 	<body>
 		<div id="header">
 			<div class="inner">
-				
+				<div class="logo">
+					<a href="<?php echo $this->baseurl; ?>"></a>
+				</div>
+				<div class="right">
+					Contact us today for a free initial consultation on <span><?php echo $templateparams->get('contect_phone'); ?></span>
+				</div>
 			</div>			
 		</div>
 		<div id="menu">
@@ -57,7 +62,6 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.j
 		</div>
 		<div id="footer">
 			<div class="inner">
-				
 			</div>			
 		</div>
 	</body>
