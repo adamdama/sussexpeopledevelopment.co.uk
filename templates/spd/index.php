@@ -36,7 +36,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.j
 		</div>
 		<div id="menu">
 			<div class="inner">
-				<jdoc:include type="modules" name="menu" />
+				<jdoc:include type="modules" name="menu_bar" />
 			</div>		
 		</div>
 		<div id="banner">
@@ -51,7 +51,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.j
 					<jdoc:include type="component" />
 				</div>
 				<div class="content-right">
-					<jdoc:include type="modules" name="right-column" />	
+					<jdoc:include type="modules" name="right_column" />	
 				</div>	
 			</div>		
 		</div>
