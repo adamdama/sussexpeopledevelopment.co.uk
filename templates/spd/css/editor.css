@@ -28,7 +28,13 @@ body
 	font-family: Arial;
 	color: #575759;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 17px;
+}
+
+ul,
+p
+{	
+	width: 480px;
 }
 
 strong
@@ -38,14 +44,17 @@ strong
 
 ul
 {
-	list-style: circle url('../images/list.gif');
+	list-style: circle url('../images/list.png');
+	padding-left: 20px;
 }
 
 li
 {
-	padding-left: 20px;	
+	padding-left: 10px;
+	margin-bottom: 5px;
 }
 
+h1,
 .title
 {
 	 font-family: 'garamondregular';
