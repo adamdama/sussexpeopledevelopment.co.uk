@@ -50,7 +50,8 @@ ul
 	margin-bottom: 5px;
 }
 
-h1{
+h2
+{
 	margin-top: 5px;
 }
 
@@ -60,7 +61,7 @@ li
 	margin-bottom: 15px;
 }
 
-h1,
+h2,
 .title
 {
 	 font-family: 'garamondregular';
