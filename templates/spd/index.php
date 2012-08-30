@@ -62,6 +62,7 @@ $pageName = $menuItem->alias;
 			<div class="inner">
 				<div class="content-left">
 					<jdoc:include type="component" />
+					<jdoc:include type="modules" name="after_content" />
 				</div>
 				<div class="content-right">
 					<jdoc:include type="modules" name="right_column" />	
