@@ -162,7 +162,17 @@ a
 
 #content
 {
-	
+	height: 540px;
+	overflow: hidden;
+	padding: 15px 0px;
+}
+
+#content .content-left
+{
+	padding: 0px 30px;
+	width: 480px;
+	float: left;
+	display: inline;
 }
 
 #footer
