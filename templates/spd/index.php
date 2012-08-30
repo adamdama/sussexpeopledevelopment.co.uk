@@ -38,7 +38,7 @@ $pageName = $menuItem->alias;
 					<a href="<?php echo $this->baseurl; ?>"></a>
 				</div>
 				<div class="right">
-					Contact us today for a free initial consultation on <span><?php echo $templateparams->get('contect_phone'); ?></span>
+					<?php echo JText::_('TPL_SPD_PHONE_MESSAGE'); ?><span><?php echo $templateparams->get('contact_phone'); ?></span>
 				</div>
 			</div>			
 		</div>
