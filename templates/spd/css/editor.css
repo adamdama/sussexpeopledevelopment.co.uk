@@ -31,7 +31,6 @@ body
 	line-height: 17px;
 }
 
-ul,
 p
 {	
 	width: 480px;
@@ -46,6 +45,7 @@ ul
 {
 	list-style: circle url('../images/list.png');
 	padding-left: 20px;
+	width: 460px;
 }
 
 li
