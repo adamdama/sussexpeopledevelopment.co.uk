@@ -19,14 +19,14 @@ $canEdit	= $this->item->params->get('access-edit');
 <div class="system-unpublished">
 <?php endif; ?>
 <?php if ($params->get('show_title')) : ?>
-	<h2>
+	<span class="title">
 		<?php if ($params->get('link_titles') && $params->get('access-view')) : ?>
 			<a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)); ?>">
 			<?php echo $this->escape($this->item->title); ?></a>
 		<?php else : ?>
 			<?php echo $this->escape($this->item->title); ?>
 		<?php endif; ?>
-	</h2>
+	</span>
 <?php endif; ?>
 
 <?php if (!$params->get('show_intro')) : ?>
@@ -38,34 +38,11 @@ $canEdit	= $this->item->params->get('access-edit');
 <?php echo $this->item->introtext; ?>
 
 <?php if ($params->get('show_readmore') && $this->item->readmore) :
-	if ($params->get('access-view')) :
 		$link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));
-	else :
-		$menu = JFactory::getApplication()->getMenu();
-		$active = $menu->getActive();
-		$itemId = $active->id;
-		$link1 = JRoute::_('index.php?option=com_users&view=login&Itemid=' . $itemId);
-		$returnURL = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));
-		$link = new JURI($link1);
-		$link->setVar('return', base64_encode($returnURL));
-	endif;
 ?>
-			<p class="readmore">
-				<a href="<?php echo $link; ?>">
-					<?php if (!$params->get('access-view')) :
-						echo JText::_('COM_CONTENT_REGISTER_TO_READ_MORE');
-					elseif ($readmore = $this->item->alternative_readmore) :
-						echo $readmore;
-						if ($params->get('show_readmore_title', 0) != 0) :
-						    echo JHtml::_('string.truncate', ($this->item->title), $params->get('readmore_limit'));
-						endif;
-					elseif ($params->get('show_readmore_title', 0) == 0) :
-						echo JText::sprintf('COM_CONTENT_READ_MORE_TITLE');
-					else :
-						echo JText::_('COM_CONTENT_READ_MORE');
-						echo JHtml::_('string.truncate', ($this->item->title), $params->get('readmore_limit'));
-					endif; ?></a>
-		</p>
+		<span class="readmore">
+				<a href="<?php echo $link; ?>">More...</a>
+		</span>
 <?php endif; ?>
 
 <?php if ($this->item->state == 0) : ?>
