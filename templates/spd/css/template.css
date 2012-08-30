@@ -30,14 +30,6 @@ img
 	border: 0 none;
 }
 
-a
-{
-	outline: none;
-	text-decoration: none;
-	color: inherit;
-	cursor: pointer;
-}
-
 .inner
 {
 	width: 880px;
