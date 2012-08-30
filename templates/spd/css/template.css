@@ -30,6 +30,11 @@ img
 	border: 0 none;
 }
 
+h2
+{
+	margin-top: -5px;
+}
+
 .inner
 {
 	width: 880px;
@@ -141,7 +146,6 @@ img
 
 #banner
 {
-	height: 355px;
 	margin-top: 10px;
 }
 
