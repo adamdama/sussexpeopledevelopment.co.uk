@@ -25,41 +25,37 @@
 
 body
 {
-	
+	font-family: Arial;
+	color: #575759;
+	font-size: 14px;
+	line-height: 16px;
 }
 
 strong
 {
-	
+	color: #40287B;
 }
 
 ul
 {
-	
+	list-style: circle url('../images/list.gif');
 }
 
 li
 {
-	
+	padding-left: 20px;	
 }
 
 .title
 {
 	 font-family: 'garamondregular';
-	 
-}
-
-.quote
-{
-	
+	 color: #40287B;
+	 font-size: 21px;
+	 line-height: 25px;
 }
 
 .accreditation
 {
-	
-}
-
-.emphasis
-{
-	
+	font-family: 'garamondregular';
+	color: #575759;
 }
