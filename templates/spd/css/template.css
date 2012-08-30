@@ -185,6 +185,26 @@ h2
 	background: url('../images/people.png') -10px 0px;
 }
 
+#content .blog-featured p
+{
+	width: 204px;
+}
+
+#content .blog-featured .items-row
+{
+	overflow: hidden;
+}
+
+#content .blog-featured .column-1
+{
+	float: left;
+}
+
+#content .blog-featured .column-2
+{
+	float: right;
+}
+
 #footer
 {
 	height: 20px;
