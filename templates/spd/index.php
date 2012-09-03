@@ -22,6 +22,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
 //$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/site.js', 'text/javascript');
 
 $menuItem = JFactory::getApplication()->getMenu()->getActive();
+$pageClass = $menuItem->params->get('pageclass_sfx');
 $pageName = $menuItem->alias;
 
 ?>
@@ -58,7 +59,7 @@ $pageName = $menuItem->alias;
 				<?php endif; ?>		
 			</div>			
 		</div>
-		<div id="content">
+		<div id="content"<?php echo $pageClass != '' ? ' class="'.$pageClass.'"' : ''; ?>>
 			<div class="inner">
 				<div class="content-left">
 					<jdoc:include type="component" />

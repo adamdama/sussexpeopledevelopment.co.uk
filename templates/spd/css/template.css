@@ -176,6 +176,11 @@ h2
 	padding-top: 30px;
 }
 
+#content.-aboutus
+{
+	height: 578px;
+}
+
 #content .content-left
 {
 	padding: 0px 30px;
@@ -183,7 +188,7 @@ h2
 	height: 100%;
 	float: left;
 	display: inline;
-	background: url('../images/people.png') -10px 0px;
+	background: url('../images/people.png') -10px 0px no-repeat;
 }
 
 #content .blog-featured p
@@ -214,7 +219,7 @@ h2
 
 #content .content-right .quote p
 {
-	margin: 30px 0px 50px 70px;
+	margin: 30px 0px 40px 70px;
 	width: 230px;
 }
 
