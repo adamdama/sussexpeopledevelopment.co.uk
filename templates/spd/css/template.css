@@ -212,14 +212,36 @@ h2
 	width: 340px;
 }
 
-#content .content-right p
-{
-	width: 100%;
-}
-
 #content .content-right .quote p
 {
-	margin: 30px 0px 50px 0px;
+	margin: 30px 0px 50px 70px;
+	width: 230px;
+}
+
+#content .content-right .quote
+{
+	position: relative;
+	text-align: center;
+}
+
+#content .content-right .spd-quote-left
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 70px;
+	height: 72px;
+	background: url('../images/quote-left.png') no-repeat;
+}
+
+#content .content-right .spd-quote-right
+{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 70px;
+	height: 72px;
+	background: url('../images/quote-right.png') no-repeat;
 }
 
 #footer
@@ -229,5 +251,3 @@ h2
 	color: #9B9C9E;
 	line-height: 20px;
 }
-
-/* Quotes */

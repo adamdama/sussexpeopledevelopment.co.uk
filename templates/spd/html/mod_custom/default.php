@@ -13,6 +13,8 @@ defined('_JEXEC') or die;
 
 <div class="quote">
 	<div class="spd-border-top"></div>
+	<div class="spd-quote-left"></div>
 	<?php echo $module->content; ?>
+	<div class="spd-quote-right"></div>
 	<div class="spd-border-bottom"></div>
 </div>
