@@ -9,4 +9,10 @@
 // no direct access
 defined('_JEXEC') or die;
 
-echo $module->content;
+?>
+
+<div class="quote">
+	<div class="spd-border-top"></div>
+	<?php echo $module->content; ?>
+	<div class="spd-border-bottom"></div>
+</div>
