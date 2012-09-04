@@ -172,13 +172,14 @@ h2
 #content
 {
 	height: 518px;
+	min-height: 518px;
 	overflow: hidden;
 	padding-top: 30px;
 }
 
 #content.-aboutus
 {
-	height: 640px;
+	min-height: 640px;
 }
 
 #content .content-left
@@ -223,10 +224,17 @@ h2
 	width: 230px;
 }
 
+#content .content-left .quote p
+{
+	margin: 30px 0px 40px 70px;
+	width: 340px;
+}
+
 #content .quote
 {
 	position: relative;
 	text-align: center;
+	margin-bottom: 40px;
 }
 
 #content .spd-quote-left
@@ -239,6 +247,16 @@ h2
 	background: url('../images/quote-left.png') no-repeat;
 }
 
+#content .spd-quote-right
+{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 70px;
+	height: 72px;
+	background: url('../images/quote-right.png') no-repeat;
+}
+
 #content .insert-left-quote
 {
 	margin-top: -20px;
@@ -248,16 +266,6 @@ h2
 #content .insert-right-quote
 {
 	margin-top: -40px;
-}
-
-#content .content-right .spd-quote-right
-{
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	width: 70px;
-	height: 72px;
-	background: url('../images/quote-right.png') no-repeat;
 }
 
 #footer
