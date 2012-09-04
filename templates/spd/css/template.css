@@ -217,19 +217,19 @@ h2
 	width: 340px;
 }
 
-#content .content-right .quote p
+#content .quote p
 {
 	margin: 30px 0px 40px 70px;
 	width: 230px;
 }
 
-#content .content-right .quote
+#content .quote
 {
 	position: relative;
 	text-align: center;
 }
 
-#content .content-right .spd-quote-left
+#content .spd-quote-left
 {
 	position: absolute;
 	top: 0px;
@@ -237,6 +237,17 @@ h2
 	width: 70px;
 	height: 72px;
 	background: url('../images/quote-left.png') no-repeat;
+}
+
+#content .insert-left-quote
+{
+	margin-top: -20px;
+	margin-bottom: -40px;
+}
+
+#content .insert-right-quote
+{
+	margin-top: -40px;
 }
 
 #content .content-right .spd-quote-right
@@ -255,15 +266,4 @@ h2
 	border-top: 2px solid #40287B;
 	color: #9B9C9E;
 	line-height: 20px;
-}
-
-.insert-left-quote
-{
-	margin-top: -20px;
-	margin-bottom: -40px;
-}
-
-.insert-right-quote
-{
-	margin-top: -40px;
 }
