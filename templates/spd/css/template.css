@@ -275,3 +275,44 @@ h2
 	color: #9B9C9E;
 	line-height: 20px;
 }
+
+
+/* jTweet */
+
+.jTweet
+{
+	width: 340px;
+	height: 480px;
+	display: inline-block;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	float: right;
+	overflow: auto;
+}
+
+.jTweetClear
+{
+	height: 40px;
+}
+
+.jTweet a
+{
+	color: #41a3c6;
+}
+
+.jTweet .tweet
+{
+	overflow: auto;
+}
+
+.jTweet h1
+{
+	font: 24px/24px Arial, Helvetica, sans-serif;
+}
+
+.jTweet hr
+{
+	height: 2px;
+	border: none;
+	background: #00A4E4;
+	margin: 5px 0;
+}
