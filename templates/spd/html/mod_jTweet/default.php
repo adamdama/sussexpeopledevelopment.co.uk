@@ -82,7 +82,22 @@ if($scripts) {
 </script>
 <!-- Start Joomla Bamboo jTweet -->
 <div class="jTweet">
-    <h1 class="title-blue"><?php echo $title; ?></h1>
+    <div class="jTweet-head">
+    	<div class="avatar">
+    		<img src="templates/spd/images/twitter-logo.png" alt="Sussex People Development" />
+    	</div>
+    	<div class="info">
+    		<span class="title">
+    			
+    		</span>
+    		<span class="at">
+    			<?php echo '@'.$userName; ?>
+    		</span>
+    		<div class="description">
+    			
+    		</div>
+    	</div>
+    </div>
     <hr />
     <?php if ($popup == "yes") :?>
     <div class="jTweetInfo">
