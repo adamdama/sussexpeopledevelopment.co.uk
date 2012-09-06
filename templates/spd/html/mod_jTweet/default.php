@@ -82,9 +82,9 @@ if($scripts) {
 </script>
 <!-- Start Joomla Bamboo jTweet -->
 <div class="jTweet">
-    <div class="jTweet-head">
+    <div class="head">
     	<div class="avatar">
-    		<img src="templates/spd/images/twitter-logo.png" alt="Sussex People Development" />
+    		
     	</div>
     	<div class="info">
     		<span class="fullname">

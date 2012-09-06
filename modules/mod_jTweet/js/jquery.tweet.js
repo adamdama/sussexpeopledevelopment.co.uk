@@ -142,21 +142,48 @@
 	if(o) $.extend(s, o);
 	
 	/** Add tweet header **/
-	(function()
-	{		
+	(function(holder)
+	{	
 		if(!s.multiuser)
 			return;
 			
-		var url = 'https://api.twitter.com/1/users/show.json?screen_name='+s.multiuser+'&include_entities=true';
-		alert(url);
+		var url = 'https://api.twitter.com/1/users/show.json?screen_name='+s.multiuser+'&include_entities=true&callback=?';
+		
 		$.getJSON(url, function(data)
-		{
-			console.log(data);
-			alert(s.multiuser);
+		{		
+			console.log(data);	
+			holder.find('.avatar')
+				.append('<img src="'+data.profile_image_url.replace('_normal', '')+'" alt="'+data.name+'" />');
+			
+			holder.find('.fullname')
+				.text(data.name);
+				
+			holder.find('.username')
+				.text('@'+data.screen_name);
+				
+			holder.find('.bio')
+				.text(data.description);
+				
+			var lau = holder.find('.location-and-url');
+			
+			$('<span class="location" />')
+				.text(data.location)
+				.appendTo(lau);
+				
+			$('<span class="divider" />')
+				.appendTo(lau);
+				
+			$('<span class="url" />')
+				.text('•')
+				.appendTo(lau);
+				
+			$('<a href="'+data.url+'" rel="me nofollow" />')
+				.text(data.url)
+				.appendTo($(lau).find('.url'));
 		});
 			
 		
-	})()
+	})(this.parent());
 
     
     return this.each(function(){
@@ -170,7 +197,6 @@
       var query = '';
       if(s.query) {
 		  var url = 'http://search.twitter.com/search.json?&q='+s.query+'&rpp='+s.count+'&callback=?';
-		  alert(url);
 		  if (s.loading_text) $(this).append(loading);
 		  $.getJSON(url, function(data){
 			if (s.loading_text) loading.remove();
