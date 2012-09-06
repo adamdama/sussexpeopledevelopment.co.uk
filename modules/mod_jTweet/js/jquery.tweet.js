@@ -138,8 +138,27 @@
 		return (parseInt(delta / 86400)).toString() + ' days ago';
 	  }
 	}
+	
+	if(o) $.extend(s, o);
+	
+	/** Add tweet header **/
+	(function()
+	{		
+		if(!s.multiuser)
+			return;
+			
+		var url = 'https://api.twitter.com/1/users/show.json?screen_name='+s.multiuser+'&include_entities=true';
+		alert(url);
+		$.getJSON(url, function(data)
+		{
+			console.log(data);
+			alert(s.multiuser);
+		});
+			
+		
+	})()
 
-    if(o) $.extend(s, o);
+    
     return this.each(function(){
       var list = $('<ul class="tweet_list">').appendTo(this);
       var intro = '<p class="tweet_intro">'+s.intro_text+'</p>';
@@ -151,6 +170,7 @@
       var query = '';
       if(s.query) {
 		  var url = 'http://search.twitter.com/search.json?&q='+s.query+'&rpp='+s.count+'&callback=?';
+		  alert(url);
 		  if (s.loading_text) $(this).append(loading);
 		  $.getJSON(url, function(data){
 			if (s.loading_text) loading.remove();

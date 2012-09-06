@@ -87,15 +87,18 @@ if($scripts) {
     		<img src="templates/spd/images/twitter-logo.png" alt="Sussex People Development" />
     	</div>
     	<div class="info">
-    		<span class="title">
+    		<span class="fullname">
     			
     		</span>
-    		<span class="at">
+    		<span class="username">
     			<?php echo '@'.$userName; ?>
     		</span>
-    		<div class="description">
+    		<p class="bio">
     			
-    		</div>
+    		</p>
+    		<p class="location-and-url">
+    			
+    		</p>
     	</div>
     </div>
     <hr />
