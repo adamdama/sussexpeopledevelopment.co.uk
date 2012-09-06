@@ -99,6 +99,13 @@ h2
 	background: url('../images/logo.png') no-repeat;
 }
 
+#header .logo a
+{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
 #header .right
 {
 	width: 275px;
