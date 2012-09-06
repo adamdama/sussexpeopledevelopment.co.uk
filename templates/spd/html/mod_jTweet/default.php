@@ -87,19 +87,11 @@ if($scripts) {
     		
     	</div>
     	<div class="info">
-    		<span class="fullname">
-    			
-    		</span>
-    		<span class="username">
-    			<?php echo '@'.$userName; ?>
-    		</span>
-    		<p class="bio">
-    			
-    		</p>
-    		<p class="location-and-url">
-    			
-    		</p>
+    		<span class="fullname"></span>
+    		<span class="username"></span>
+    		<p class="bio"></p>
     	</div>
+    	<p class="location"></p>
     </div>
     <hr />
     <?php if ($popup == "yes") :?>

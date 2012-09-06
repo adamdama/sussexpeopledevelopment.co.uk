@@ -164,7 +164,7 @@
 			holder.find('.bio')
 				.text(data.description);
 				
-			var lau = holder.find('.location-and-url');
+			/*var lau = holder.find('.location-and-url');
 			
 			$('<span class="location" />')
 				.text(data.location)
@@ -179,7 +179,16 @@
 				
 			$('<a href="'+data.url+'" rel="me nofollow" />')
 				.text(data.url)
-				.appendTo($(lau).find('.url'));
+				.appendTo(lau.find('.url'));*/
+				
+			var link = holder.find('.location');
+			
+			$('<span class="url" />')
+				.appendTo(link);
+				
+			$('<a href="'+data.url+'" rel="me nofollow" />')
+				.text(data.url)
+				.appendTo(link.find('.url'));				
 		});
 			
 		

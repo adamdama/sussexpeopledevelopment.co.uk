@@ -282,7 +282,7 @@ h2
 
 .jTweet
 {
-	width: 340px;
+	width: 345px;
 	height: 480px;
 	display: inline-block;
 	font: 14px/16px Arial, Helvetica, sans-serif;
@@ -302,18 +302,70 @@ h2
 
 .jTweet .tweet
 {
+	width: 340px;
 	overflow: auto;
-}
-
-.jTweet h1
-{
-	font: 24px/24px Arial, Helvetica, sans-serif;
 }
 
 .jTweet hr
 {
-	height: 2px;
+	height: 1px;
 	border: none;
-	background: #00A4E4;
+	background: #EAE9EA;
 	margin: 5px 0;
+}
+
+.jTweet .head
+{
+	width: 345px;
+	position: relative;
+}
+
+.jTweet .head .avatar
+{
+	display: inline-block;
+	width: 96px;
+	height: 114px;
+	overflow: hidden;
+}
+
+.jTweet .head .avatar img
+{
+	width: 104px;
+	height: 104px;
+}
+
+.jTweet .head .info
+{
+	width: 240px;
+	float: right;
+	display: inline-block;
+}
+
+.jTweet .head p
+{
+	width: 100%;
+	font: italic 12px/13px Georgia,"Times New Roman",serif;
+	color: #777;
+	margin: 0px 0px 3px 0px;
+}
+
+.jTweet .head .info span.fullname,
+.jTweet .head .info span.username
+{
+	display: block;
+	margin-bottom: 3px;
+}
+
+.jTweet .head .info span.fullname
+{
+	color: #000;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.jTweet .head .info span.username
+{
+	color: #999;
+	font-size: 12px;
 }
